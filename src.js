@@ -21,15 +21,35 @@ function addItemA(event) {
   event.preventDefault();
   a++;
   document.getElementById("quantityA").innerText = a;
-  a2 = a * 0.5;
-  document.getElementById("subtotalA").innerText = `£ ${a2}`;
+  if (a === 3) {
+    a2 = a * 0.433333333;
+    document.getElementById("subtotalA").innerText = `£ ${a2}`;
+  } else {
+    if (a === 6) {
+      a2 = a * 0.433333333;
+      document.getElementById("subtotalA").innerText = `£ ${a2}`;
+    } else {
+      a2 = a * 0.5;
+      document.getElementById("subtotalA").innerText = `£ ${a2}`;
+    }
+  }
 }
 function removeItemA(event) {
   event.preventDefault();
   a--;
   document.getElementById("quantityA").innerText = a;
-  a2 = a * 0.5;
-  document.getElementById("subtotalA").innerText = `£ ${a2}`;
+  if (a === 3) {
+    a2 = a * 0.433333333;
+    document.getElementById("subtotalA").innerText = `£ ${a2}`;
+  } else {
+    if (a === 6) {
+      a2 = a * 0.433333333;
+      document.getElementById("subtotalA").innerText = `£ ${a2}`;
+    } else {
+      a2 = a * 0.5;
+      document.getElementById("subtotalA").innerText = `£ ${a2}`;
+    }
+  }
 }
 var b = document.getElementById("quantityB").innerText;
 var b2 = document.getElementById("subtotalB").innerText;
@@ -37,15 +57,35 @@ function addItemB(event) {
   event.preventDefault();
   b++;
   document.getElementById("quantityB").innerText = b;
-  b2 = b * 0.3;
-  document.getElementById("subtotalB").innerText = `£ ${b2}`;
+  if (b === 2) {
+    b2 = b * 0.225;
+    document.getElementById("subtotalB").innerText = `£ ${b2}`;
+  } else {
+    if (b === 4) {
+      b2 = b * 0.225;
+      document.getElementById("subtotalB").innerText = `£ ${b2}`;
+    } else {
+      b2 = b * 0.3;
+      document.getElementById("subtotalB").innerText = `£ ${b2}`;
+    }
+  }
 }
 function removeItemB(event) {
   event.preventDefault();
   b--;
   document.getElementById("quantityB").innerText = b;
-  b2 = b * 0.3;
-  document.getElementById("subtotalB").innerText = `£ ${b2}`;
+  if (b === 2) {
+    b2 = b * 0.225;
+    document.getElementById("subtotalB").innerText = `£ ${b2}`;
+  } else {
+    if (b === 4) {
+      b2 = b * 0.225;
+      document.getElementById("subtotalB").innerText = `£ ${b2}`;
+    } else {
+      b2 = b * 0.3;
+      document.getElementById("subtotalB").innerText = `£ ${b2}`;
+    }
+  }
 }
 var c = document.getElementById("quantityC").innerText;
 var c2 = document.getElementById("subtotalC").innerText;
