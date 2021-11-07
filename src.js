@@ -16,10 +16,13 @@ let removeButtonD = document.querySelector("#remove-button-D");
 removeButtonD.addEventListener("click", removeItemD);
 
 var a = document.getElementById("quantityA").innerText;
+var a2 = document.getElementById("subtotalA").innerText;
 function addItemA(event) {
   event.preventDefault();
   a++;
   document.getElementById("quantityA").innerText = a;
+  a2 = a * 0.5;
+  document.getElementById("subtotalA").innerText = a2;
 }
 function removeItemA(event) {
   event.preventDefault();
