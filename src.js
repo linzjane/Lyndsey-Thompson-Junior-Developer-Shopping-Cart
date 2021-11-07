@@ -30,10 +30,13 @@ function removeItemA(event) {
   document.getElementById("quantityA").innerText = a;
 }
 var b = document.getElementById("quantityB").innerText;
+var b2 = document.getElementById("subtotalB").innerText;
 function addItemB(event) {
   event.preventDefault();
   b++;
   document.getElementById("quantityB").innerText = b;
+  b2 = b * 0.3;
+  document.getElementById("subtotalB").innerText = b2;
 }
 function removeItemB(event) {
   event.preventDefault();
@@ -41,10 +44,13 @@ function removeItemB(event) {
   document.getElementById("quantityB").innerText = b;
 }
 var c = document.getElementById("quantityC").innerText;
+var c2 = document.getElementById("subtotalC").innerText;
 function addItemC(event) {
   event.preventDefault();
   c++;
   document.getElementById("quantityC").innerText = c;
+  c2 = c * 0.2;
+  document.getElementById("subtotalC").innerText = c2;
 }
 function removeItemC(event) {
   event.preventDefault();
@@ -52,10 +58,13 @@ function removeItemC(event) {
   document.getElementById("quantityC").innerText = c;
 }
 var d = document.getElementById("quantityD").innerText;
+var d2 = document.getElementById("subtotalD").innerText;
 function addItemD(event) {
   event.preventDefault();
   d++;
   document.getElementById("quantityD").innerText = d;
+  d2 = d * 0.15;
+  document.getElementById("subtotalD").innerText = d2;
 }
 function removeItemD(event) {
   event.preventDefault();
