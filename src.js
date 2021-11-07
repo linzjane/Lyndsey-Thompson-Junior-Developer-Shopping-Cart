@@ -28,6 +28,8 @@ function removeItemA(event) {
   event.preventDefault();
   a--;
   document.getElementById("quantityA").innerText = a;
+  a2 = a * 0.5;
+  document.getElementById("subtotalA").innerText = a2;
 }
 var b = document.getElementById("quantityB").innerText;
 var b2 = document.getElementById("subtotalB").innerText;
@@ -42,6 +44,8 @@ function removeItemB(event) {
   event.preventDefault();
   b--;
   document.getElementById("quantityB").innerText = b;
+  b2 = b * 0.3;
+  document.getElementById("subtotalB").innerText = b2;
 }
 var c = document.getElementById("quantityC").innerText;
 var c2 = document.getElementById("subtotalC").innerText;
@@ -56,6 +60,8 @@ function removeItemC(event) {
   event.preventDefault();
   c--;
   document.getElementById("quantityC").innerText = c;
+  c2 = c * 0.2;
+  document.getElementById("subtotalC").innerText = c2;
 }
 var d = document.getElementById("quantityD").innerText;
 var d2 = document.getElementById("subtotalD").innerText;
@@ -70,4 +76,6 @@ function removeItemD(event) {
   event.preventDefault();
   d--;
   document.getElementById("quantityD").innerText = d;
+  d2 = d * 0.15;
+  document.getElementById("subtotalD").innerText = d2;
 }
