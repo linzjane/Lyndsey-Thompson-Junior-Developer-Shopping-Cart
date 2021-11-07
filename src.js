@@ -79,3 +79,10 @@ function removeItemD(event) {
   d2 = d * 0.15;
   document.getElementById("subtotalD").innerText = d2;
 }
+function calculateTotal(event) {
+  event.preventDefault();
+  var sum = a2 + b2 + c2 + d2;
+  document.getElementById("finalTotal").innerText = `£ ${sum}`;
+}
+let totalButton = document.querySelector("#calc-button");
+totalButton.addEventListener("click", calculateTotal);
